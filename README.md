@@ -1,21 +1,56 @@
 # EtherRAT-appendixes
 
-Malicious facade GitHub repositories
-| Malicious GitHub Repo URL | Targeted Software |
-|---|---| 
-| hxxps://github[.]com/adexplore/Kusto.Explorer | Kusto Explorer |
-| hxxps://github[.]com/adkcore/Windows-ADK | Windows ADK | 
-| hxxps://github[.]com/applck/AppLocker | AppLocker | 
-| hxxps://github[.]com/autify5/Autologon | Autologon |
-| hxxps://github[.]com/azpath/AzCopy | AzCopy | | hxxps://github[.]com/bartuser/BarTender | BarTender |
-| hxxps://github[.]com/beycmp/Beyond-Compare | Beyond Compare | | hxxps://github[.]com/bvclient/Bitvise-SSH-Client | Bitvise SSH Client |
-| hxxps://github[.]com/corelaun/Autoruns | Autoruns | | hxxps://github[.]com/cpumon/Process-Monitor | Process Monitor | | hxxps://github[.]com/damekit/Dameware | Dameware |
-| hxxps://github[.]com/dbgrix/DebugView | DebugView | | hxxps://github[.]com/delprof2int/Delprof2 | Delprof2 | | hxxps://github[.]com/desklt/LEAP-Desktop | LEAP Desktop | | hxxps://github[.]com/enssm/NSSM | NSSM (Non-Sucking Service Manager) |
-| hxxps://github[.]com/fsgrid/FSLogix | FSLogix | | hxxps://github[.]com/glyph3/ScreenConnect-Client | ScreenConnect Client | | hxxps://github[.]com/iiscfg/IIS-Crypto | IIS Crypto | | hxxps://github[.]com/kdiffmg/KDiff3 | KDiff3 | | hxxps://github[.]com/lapwiz/Windows-LAPS | Windows LAPS |
-| hxxps://github[.]com/migrtool/PCmover | PCmover | | hxxps://github[.]com/paperdesk/PaperPort | PaperPort | | hxxps://github[.]com/procbyte/ProcDump | ProcDump | | hxxps://github[.]com/prtgmon/PRTG-Network-Monitor | PRTG Network Monitor | | hxxps://github[.]com/psanvil/PsTools | PsTools |
-| hxxps://github[.]com/psexsrv/PsExec | PsExec | | hxxps://github[.]com/pwmover/Profwiz | Profwiz | | hxxps://github[.]com/pxmon/Process-Explorer | Process Explorer | | hxxps://github[.]com/reqdbg/HTTP-Debugger | HTTP Debugger | | hxxps://github[.]com/rsamod/RSAT | Remote Server Administration Tools (RSAT) | | hxxps://github[.]com/safcli/Safenet-Authentication-Client | SafeNet Authentication Client | | hxxps://github[.]com/sputmgr/SuperPuTTY | SuperPuTTY | | hxxps://github[.]com/sshcrt/SecureCRT | SecureCRT | | hxxps://github[.]com/symdbg/WinDbg | WinDbg | | hxxps://github[.]com/syshield/Sysmon | Sysmon | | hxxps://github[.]com/sysramap/RAMMap | RAMMap | | hxxps://github[.]com/tcpvmon/TCPView | TCPView | | hxxps://github[.]com/teracli/Tera-Term | Tera Term | | hxxps://github[.]com/vhdcore/Disk2vhd | Disk2vhd | | hxxps://github[.]com/vmlets/VMware-Tools | VMware Tools | | hxxps://github[.]com/winlabel/BgInfo | BgInfo | | hxxps://github[.]com/xferwiz/Transwiz | Transwiz |
+## Malicious facade GitHub repositories
+📄 [Download CSV](IoCs/malicious_github_repos.csv)
 
-ETH RPC endpoints used by malware
+| Malicious GitHub Repo URL | Targeted Software |
+|---|---|
+| hxxps://github[.]com/adexplore/Kusto.Explorer | Kusto Explorer |
+| hxxps://github[.]com/adkcore/Windows-ADK | Windows ADK |
+| hxxps://github[.]com/applck/AppLocker | AppLocker |
+| hxxps://github[.]com/autify5/Autologon | Autologon |
+| hxxps://github[.]com/azpath/AzCopy | AzCopy |
+| hxxps://github[.]com/bartuser/BarTender | BarTender |
+| hxxps://github[.]com/beycmp/Beyond-Compare | Beyond Compare |
+| hxxps://github[.]com/bvclient/Bitvise-SSH-Client | Bitvise SSH Client |
+| hxxps://github[.]com/corelaun/Autoruns | Autoruns |
+| hxxps://github[.]com/cpumon/Process-Monitor | Process Monitor |
+| hxxps://github[.]com/damekit/Dameware | Dameware |
+| hxxps://github[.]com/dbgrix/DebugView | DebugView |
+| hxxps://github[.]com/delprof2int/Delprof2 | Delprof2 |
+| hxxps://github[.]com/desklt/LEAP-Desktop | LEAP Desktop |
+| hxxps://github[.]com/enssm/NSSM | NSSM (Non-Sucking Service Manager) |
+| hxxps://github[.]com/fsgrid/FSLogix | FSLogix |
+| hxxps://github[.]com/glyph3/ScreenConnect-Client | ScreenConnect Client |
+| hxxps://github[.]com/iiscfg/IIS-Crypto | IIS Crypto |
+| hxxps://github[.]com/kdiffmg/KDiff3 | KDiff3 |
+| hxxps://github[.]com/lapwiz/Windows-LAPS | Windows LAPS |
+| hxxps://github[.]com/migrtool/PCmover | PCmover |
+| hxxps://github[.]com/paperdesk/PaperPort | PaperPort |
+| hxxps://github[.]com/procbyte/ProcDump | ProcDump |
+| hxxps://github[.]com/prtgmon/PRTG-Network-Monitor | PRTG Network Monitor |
+| hxxps://github[.]com/psanvil/PsTools | PsTools |
+| hxxps://github[.]com/psexsrv/PsExec | PsExec |
+| hxxps://github[.]com/pwmover/Profwiz | Profwiz |
+| hxxps://github[.]com/pxmon/Process-Explorer | Process Explorer |
+| hxxps://github[.]com/reqdbg/HTTP-Debugger | HTTP Debugger |
+| hxxps://github[.]com/rsamod/RSAT | Remote Server Administration Tools (RSAT) |
+| hxxps://github[.]com/safcli/Safenet-Authentication-Client | SafeNet Authentication Client |
+| hxxps://github[.]com/sputmgr/SuperPuTTY | SuperPuTTY |
+| hxxps://github[.]com/sshcrt/SecureCRT | SecureCRT |
+| hxxps://github[.]com/symdbg/WinDbg | WinDbg |
+| hxxps://github[.]com/syshield/Sysmon | Sysmon |
+| hxxps://github[.]com/sysramap/RAMMap | RAMMap |
+| hxxps://github[.]com/tcpvmon/TCPView | TCPView |
+| hxxps://github[.]com/teracli/Tera-Term | Tera Term |
+| hxxps://github[.]com/vhdcore/Disk2vhd | Disk2vhd |
+| hxxps://github[.]com/vmlets/VMware-Tools | VMware Tools |
+| hxxps://github[.]com/winlabel/BgInfo | BgInfo |
+| hxxps://github[.]com/xferwiz/Transwiz | Transwiz |
+
+## ETH RPC endpoints used by malware
+📄 [Download CSV](IoCs/eth_rpc_endpoints.csv)
+
 | URL |
 |---|
 | hxxps[://]eth[.]llamarpc[.]com |
@@ -24,11 +59,14 @@ ETH RPC endpoints used by malware
 | hxxps[://]rpc[.]mevblocker[.]io |
 | hxxps[://]eth-mainnet[.]public[.]blastapi[.]io |
 | hxxps[://]ethereum-rpc[.]publicnode[.]com |
-| hxxps[://]rpc[.]payload[.]de | | hxxps[://]eth[.]drpc[.]org |
+| hxxps[://]rpc[.]payload[.]de |
+| hxxps[://]eth[.]drpc[.]org |
 | hxxps[://]eth[.]merkle[.]io |
 
-Malicious wallet and contract used by EtherRAT in recent months for C2 distribution
-| wallet | wallet_created | contract | contract_created | calls |
+## Malicious wallet and contract used by EtherRAT in recent months for C2 distribution
+📄 [Download CSV](IoCs/wallets_and_contracts.csv)
+
+| wallet | wallet_created | contract | contract_created | setString_calls |
 |---|---|---|---|---| 
 | 0x2eb2ec6026b63158042d27e8004957ec71783287 | 2025/11/29T01:26:59Z | 0x6ef160dac69c68461879c0c3486164af07533d17 | 2025/11/29T01:32:11Z | 1 |
 | 0x233f7ac7f307d2c781be66da432cb865efa804e0 | 2025/11/29T06:38:11Z | 0x21f9a727e9668a3fc30393a344d8a3a98f4f3b8d | 2025/11/29T06:39:23Z | 1 |
@@ -57,7 +95,9 @@ Malicious wallet and contract used by EtherRAT in recent months for C2 distribut
 | 0x95c1f98be0cbb581e31c57c3f17d2853b4a445a7 | 2026/03/23T19:42:47Z | 0x9268cc33d59415b033dc5d709ce30bbe09708fe3 | 2026/03/25T13:59:35Z | 35 |
 | 0x37ef6e88425613564b2cf8adc496acff4b6481a9 | 2026/03/30T11:59:47Z | 0xc12c8d8f9706244eca0acf04e880f10ff4e52522 | 2026/03/31T09:36:47Z | 21 |
 
-Domains found in EtherRAT contract events
+## Domains found in EtherRAT contract events
+📄 [Download CSV](IoCs/domains.csv)
+
 | Domain | first_seen | last_seen | occurrences |
 |---|---|---|---| 
 | hxxps://api-gateway-prod.com | 2025/11/29T06:44:59Z | 2025/12/11T17:01:23Z | 6 |
@@ -83,12 +123,12 @@ Domains found in EtherRAT contract events
 | hxxps://regancontrols.com | 2026/02/16T11:56:35Z | 2026/02/16T11:57:11Z | 2 |
 | hxxps://salinasrent.com | 2026/02/17T21:05:11Z | 2026/02/18T21:04:11Z | 2 |
 | hxxps://justtalken.com | 2026/02/17T21:33:59Z | 2026/02/17T21:33:59Z | 1 |
-| hxxp://jariosos.com/ | 2026/02/19T13:36:23Z | 2026/02/19T13:36:23Z | 1 
-| | hxxp://193.233.126.94 | 2026/02/19T13:46:47Z | 2026/03/04T13:13:47Z | 2 |
+| hxxp://jariosos.com/ | 2026/02/19T13:36:23Z | 2026/02/19T13:36:23Z | 1 | 
+| hxxp://193.233.126.94 | 2026/02/19T13:46:47Z | 2026/03/04T13:13:47Z | 2 |
 | hxxps://mebeliotmasiv.com | 2026/02/19T22:18:23Z | 2026/02/19T22:18:23Z | 1 |
 | hxxps://waygatterol002.com | 2026/02/19T22:59:23Z | 2026/02/26T02:33:59Z | 6 |
-| hxxps://euclidrent.com | 2026/02/23T10:19:23Z | 2026/02/25T23:28:11Z | 2 
-| | hxxps://o-parana.com | 2026/02/25T23:07:59Z | 2026/02/25T23:31:47Z | 2 |
+| hxxps://euclidrent.com | 2026/02/23T10:19:23Z | 2026/02/25T23:28:11Z | 2 |
+| hxxps://o-parana.com | 2026/02/25T23:07:59Z | 2026/02/25T23:31:47Z | 2 |
 | hxxps://palshona.com | 2026/03/02T11:16:47Z | 2026/03/04T13:31:47Z | 2 |
 | hxxps://chjunhao.com | 2026/03/03T12:27:47Z | 2026/03/03T12:27:47Z | 1 |
 | hxxps://wpuadmin.shop | 2026/03/06T11:59:11Z | 2026/03/06T11:59:11Z | 1 |
@@ -128,7 +168,9 @@ Domains found in EtherRAT contract events
 | hxxps://terminal-labels-fan-witness.trycloudflare.com | 2026/04/02T07:12:59Z | 2026/04/02T07:12:59Z | 1 |
 | hxxps://imported-spread-amplifier-chemicals.trycloudflare.com | 2026/04/02T17:55:59Z | 2026/04/02T17:56:11Z | 2 |
 
-Tactics, Technics and Procedures (TTPs)
+## Tactics, Technics and Procedures (TTPs)
+📄 [Download CSV](IoCs/ttps.csv)
+
 | Tactic | ID | Technique | Evidence |
 |---|---|---|---| 
 | Initial Access | T1204.002 | User Execution: Malicious File | User must run the MSI installer manually |
@@ -152,7 +194,8 @@ Tactics, Technics and Procedures (TTPs)
 | Discovery | T1049 | System Network Connections Discovery | Active network connections enumerated via PowerShell |
 | Discovery | T1012 | Query Registry | Registry queried for system and configuration information; multiple execution instances logged |
 | Discovery | T1033 | System Owner/User Discovery | COMPUTERNAME and USERNAME read from process.env to derive bot node ID; user identity enumerated alongside permission group discovery |
-| Discovery | T1069 | Permission Groups Discovery | Local/domain group membership enumerated for privilege context | | Discovery | T1018 | Remote System Discovery | Remote hosts on network discovered via PowerShell commands | 
+| Discovery | T1069 | Permission Groups Discovery | Local/domain group membership enumerated for privilege context |
+| Discovery | T1018 | Remote System Discovery | Remote hosts on network discovered via PowerShell commands |
 | Collection | T1113 | Screen Capture | Screen capture activity triggered via PowerShell execution |
 | Command and Control | T1105 | Ingress Tool Transfer | Node.js v18.17.0/v20.10.0 downloaded from nodejs.org at runtime; secondary payload retrieved via JavaScript | 
 | Command and Control | T1071.001 | Application Layer Protocol: Web Protocols | HTTPS POST to C2 URL; polling every 60 seconds via setInterval | 
@@ -160,3 +203,16 @@ Tactics, Technics and Procedures (TTPs)
 | Command and Control | T1102 | Web Service | Ethereum smart contract used as C2 URL resolver via eth_call (selector 0x7d434425) to nine hardcoded public RPC endpoints |
 | Command and Control | T1568 | Dynamic Resolution | C2 URL resolved dynamically from blockchain state and can change without recompiling the malware |
 
+## Malware stages
+
+### Stage 0 – MSI CustomAction & Initialization
+<img src="malware_stages/stage0.png" width="500" alt="Stage 0 – MSI CustomAction & Initialization">
+
+### Stage 1 – Decryption & In-Memory Execution
+<img src="malware_stages/stage1.png" width="500" alt="Stage 1 – Decryption & In-Memory Execution">
+
+### Stage 2 – Stage 3 Decryption, Launch & Persistence
+<img src="malware_stages/stage2.png" width="500" alt="Stage 2 – Stage 3 Decryption, Launch & Persistence">
+
+### Stage 3 – RAT C2 Resolution & Polling Loop
+<img src="malware_stages/stage3.png" width="500" alt="Stage 3 – RAT C2 Resolution & Polling Loop">

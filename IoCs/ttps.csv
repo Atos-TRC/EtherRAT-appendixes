@@ -1,0 +1,30 @@
+Tactic,ID,Technique,Evidence
+Initial Access,T1204.002,User Execution: Malicious File,User must run the MSI installer manually
+Execution,T1059.001,Command and Scripting Interpreter: PowerShell,"PowerShell commands observed in admin activity logs; used as execution vehicle for screen capture"
+Execution,T1218.007,System Binary Proxy Execution: Msiexec,"MSI CustomAction Type 1250 invokes cmd.exe /c call <random>.cmd at sequence 4001"
+Execution,T1059.003,Command and Scripting Interpreter: Windows Command Shell,.cmd orchestrates download extraction staging and Node.js launch
+Execution,T1059.007,Command and Scripting Interpreter: JavaScript,"All three stages are Node.js JS; tasks received from C2 executed via AsyncFunction constructor; used to deliver payload and communicate with C2"
+Defense Evasion,T1497,Virtualization/Sandbox Evasion,VM/sandbox detection checks observed alongside system info discovery
+Defense Evasion,T1564.003,Hide Artifacts: Hidden Window,CMD re-spawns itself via start /min cmd /c call with no visible window
+Defense Evasion,T1036.005,Masquerading: Match Legitimate Name or Location,Log file hardcoded as svchost.log to blend with legitimate Windows process names
+Defense Evasion,T1036.008,Masquerading: Masquerading File Type,"Encrypted payloads use benign extensions (.xml .bak .cfg .dat .bin .ini .tmp); Node.js binary renamed to a random extensionless string"
+Defense Evasion,T1027,Obfuscated Files or Information,"Stage 3 likely obfuscated with OBFuscator.io (string array encoding, control-flow flattening, per-build variable prefixes)"
+Defense Evasion,T1027.002,Obfuscated Files or Information: Software Packing,"Stage 2 and stage 3 AES-256-CBC encrypted; stage 3 key/IV recovered only at runtime via VM execution of stage 2"
+Defense Evasion,T1027.010,Command Obfuscation,"Node.js download URL split across 7-8 CMD variables; bitsadmin and tar split with empty strings to evade keyword detection"
+Defense Evasion,T1140,Deobfuscate/Decode Files or Information,"Stage 1 decrypts stage 2; stage 2 VM execution yields key/IV to decrypt stage 3"
+Defense Evasion,T1620,Reflective Code Loading,Malware requests re-obfuscated payload from C2 and re-executes it in place via spawn and process.exit
+Discovery,T1082,System Information Discovery,"COMPUTERNAME APPDATA and USERPROFILE queried for bot ID generation and staging; system info gathered alongside registry queries and sandbox evasion checks"
+Discovery,T1016,System Network Configuration Discovery,"Network configuration enumeration observed in PowerShell commands; multiple execution instances logged"
+Discovery,T1518.001,Software Discovery: Security Software Discovery,Security tool enumeration observed in PowerShell activity
+Discovery,T1614.001,System Location Discovery: System Language Discovery,System language queried via PowerShell commands
+Discovery,T1049,System Network Connections Discovery,Active network connections enumerated via PowerShell
+Discovery,T1012,Query Registry,"Registry queried for system and configuration information; multiple execution instances logged"
+Discovery,T1033,System Owner/User Discovery,"COMPUTERNAME and USERNAME read from process.env to derive bot node ID; user identity enumerated alongside permission group discovery"
+Discovery,T1069,Permission Groups Discovery,Local/domain group membership enumerated for privilege context
+Discovery,T1018,Remote System Discovery,Remote hosts on network discovered via PowerShell commands
+Collection,T1113,Screen Capture,Screen capture activity triggered via PowerShell execution
+Command and Control,T1105,Ingress Tool Transfer,"Node.js v18.17.0/v20.10.0 downloaded from nodejs.org at runtime; secondary payload retrieved via JavaScript"
+Command and Control,T1071.001,Application Layer Protocol: Web Protocols,"HTTPS POST to C2 URL; polling every 60 seconds via setInterval"
+Command and Control,T1573,Encrypted Channel,Encrypted HTTPS channel used to mask C2 traffic
+Command and Control,T1102,Web Service,Ethereum smart contract used as C2 URL resolver via eth_call (selector 0x7d434425) to nine hardcoded public RPC endpoints
+Command and Control,T1568,Dynamic Resolution,C2 URL resolved dynamically from blockchain state and can change without recompiling the malware
